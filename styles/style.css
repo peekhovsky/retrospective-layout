@@ -123,9 +123,6 @@ body {
     min-width: 93vw;
 }
 
-.left-block:hover::before {
-    z-index: 5;
-}
 
 .left-block a {
     position: absolute;
@@ -231,4 +228,35 @@ body {
 .center-block .info-text h5 {
     font-size: 14pt;
     margin: 1rem 0 0 0;
+}
+
+.video-form {
+    margin: 150pt 20vw 0 20vw;
+}
+
+.video-form ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+.video-form ul li {
+    text-align: center;
+    align-content: center;
+    margin-top: 10pt;
+}
+.video-form input[type=text] {
+    height: 40pt;
+    width: 250pt;
+    font-size: 24pt;
+}
+
+.video-form input[type=file] {
+    height: 40pt;
+    width: 350pt;
+    font-size: 24pt;
+}
+
+.video-form label {
+    width: 250pt;
+    font-size: 35pt;
 }

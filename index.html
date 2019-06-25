@@ -11,7 +11,7 @@
 <body>
     <header class="header container">
         <div class="fullscreen-video-wrap">
-            <video src="./images/background-video.mp4" autoplay="true" loop="true">
+            <video src="./images/background-video.mp4" autoplay="false" loop="true">
             </video>
         </div>
         <div class="header-overlay"></div>
@@ -93,7 +93,17 @@
             </div>
             <div id="right-block" class="right-block">
                 <a id="rightside" href="/#">Apply ⬅</a>
-                <form id="upload-widget" method="post" action="/upload" class="dropzone">
+                <form class="video-form">
+                    <ul>
+                        <li>
+                            <label class="label-1">Enter your name</label><br/>
+                            <input type="text" />
+                        </li>
+                        <li>
+                            <label class="label-2">Upload your video</label><br/>
+                            <input type="file" />
+                        </li>
+                    </ul>
                 </form>
             </div>
             <div id="bottom-block" class="bottom-block">
@@ -105,4 +115,5 @@
 </body>
 <script src="/dist/main.js"></script>
 <script src="src/dropzone.js"></script>
+
 </html>
