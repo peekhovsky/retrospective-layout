@@ -8,7 +8,6 @@
 }
 
 body {
-    min-width: 800pt;
     margin: 0;
     font-family: 'KonstantGrotesk', 'Georgia',
         'Times New Roman', 'Times', sans-serif;
@@ -124,11 +123,15 @@ body {
     min-width: 93vw;
 }
 
+.left-block:hover::before {
+    z-index: 5;
+}
+
 .left-block a {
-    writing-mode: vertical-lr;
-    text-orientation: sideways-lr;
-    transform: rotate(-180deg);
-    padding: 1rem 0;
+    position: absolute;
+    left: -55pt;
+    bottom: 100pt;
+    transform: rotate(-90deg);
 }
 
 
@@ -151,9 +154,10 @@ body {
 }
 
 .right-block a {
-    writing-mode: vertical-lr;
-    text-orientation: sideways-lr;
-    padding: 1rem 0;
+    position: absolute;
+     right: -45pt;
+    top: 50pt;
+    transform: rotate(90deg);
 }
 
 .bottom-block {
@@ -180,6 +184,7 @@ body {
 }
 
 .center-block {
+    min-width: 600pt;
     text-align: left;
     grid-row-start: 2;
     grid-row-end: 3;
