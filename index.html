@@ -10,21 +10,40 @@
 <body>
     <header class="header container">
         <div class="fullscreen-video-wrap">
-            <video src="images/background-video.mp4" autoplay="true" loop="true"></video>
+            <video src="./images/background-video.mp4" autoplay="true" loop="true">
+            </video>
         </div>
         <div class="header-overlay"></div>
 
-        <div class="wrapper">
-            <div class="upside-block">
-
-                <a href="#upside">Dates ⬅</a>
-            </div>
-            <div class="left-block">
-                <div class="right-rotate">
-                    <a href="#left">Location ⬅</a>
+        <div id="wrapper" class="wrapper">
+            <div id="upside-block" class="upside-block">
+                <div class="block-wrapper">
+                    <a id="upside" href="/#">Dates ⬅</a>
+                    <ul class="info">
+                        <li>
+                            Date 1
+                        </li>
+                        <li>
+                            Date 2
+                        </li>
+                    </ul>
                 </div>
-             </div>
-            <div class="center-block">
+
+            </div>
+            <div id="left-block" class="left-block">
+                <div class="right-rotate">
+                    <div class="block-wrapper">
+                        <a id="leftside" href="/#">Location ⬅</a>
+                        <li>
+                            Date 1
+                        </li>
+                        <li>
+                            Date 2
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div id="center-block" class="center-block">
                 <img class="logo-img" src="/images/logo.png" alt="logo">
                 <div class="info-text">
                     <div class="col-1">
@@ -40,7 +59,8 @@
                             </li>
                             <li>
                                 <h5>18.30 - 20.00</h5>
-                                Out-of-competition program with participation of students from the <span style="white-space: nowrap;">St. Petersburg</span>
+                                Out-of-competition program with participation of students from the <span
+                                    style="white-space: nowrap;">St. Petersburg</span>
                                 Faculty of Liberal Arts and Sciences.
                             </li>
                         </ul>
@@ -70,16 +90,16 @@
                 </div>
                 <!-- <a href="/#" class="btn">Read more</a> -->
             </div>
-            <div class="right-block">
-                <a href="#left">Apply ⬅</a>
+            <div id="right-block" class="right-block">
+                <a id="rightside" href="/#">Apply ⬅</a>
             </div>
-            <div class="bottom-block">
-                <a href="#bottom">About ⬅</a>
+            <div id="bottom-block" class="bottom-block">
+                <a id="bottomside" href="/#">About ⬅</a>
             </div>
 
         </div>
     </header>
 </body>
-<script src="/js/main.js"></script>
+<script src="/dist/main.js"></script>
 
 </html>
