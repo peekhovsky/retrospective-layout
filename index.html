@@ -5,47 +5,38 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Untitled</title>
-
 </head>
 
 <body>
     <header class="header container">
         <div class="fullscreen-video-wrap">
-            <video src="./images/background-video.mp4" autoplay="false" loop="true">
+            <video id="video" src="./images/background-video.mp4" autoplay="true" loop="true" muted="muted">
             </video>
         </div>
         <div class="header-overlay"></div>
 
         <div id="wrapper" class="wrapper">
             <div id="upside-block" class="upside-block">
-                <div class="block-wrapper">
-                    <a id="upside" href="/#">Dates ⬅</a>
-                    <ul class="info">
-                        <li>
-                            Date 1
-                        </li>
-                        <li>
-                            Date 2
-                        </li>
-                    </ul>
+                <a id="upside" href="/#">Dates ⬅</a>
+                <h2>29-30 March 2020</h2>
+                <div class="timer" id="timer">
                 </div>
-
             </div>
             <div id="left-block" class="left-block">
                 <div class="right-rotate">
                     <div class="block-wrapper">
                         <a id="leftside" href="/#">Location ⬅</a>
-                        <li>
-                            Date 1
-                        </li>
-                        <li>
-                            Date 2
-                        </li>
+                        <div class="map-block">
+                            <h1>Saviсiaus g.17, Vilnius</h1>
+                            <iframe class="map"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2306.7300345268886!2d25.2894573!3d54.6791799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd943e219cee7f%3A0xd404ba8b1f0f7048!2sSavi%C4%8Diaus+g.+17%2C+Vilnius+01126%2C+Lithuania!5e0!3m2!1sen!2sby!4v1561629362985!5m2!1sen!2sby"
+                                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="center-block" class="center-block">
-                <img class="logo-img" src="/images/logo.png" alt="logo">
+                <img class="logo-img" src="./images/logo.png" alt="logo">
                 <div class="info-text">
                     <div class="col-1">
                         <h3>29 March (221 room)</h3>
@@ -96,24 +87,47 @@
                 <form class="video-form">
                     <ul>
                         <li>
-                            <label class="label-1">Enter your name</label><br/>
+                            <label class="label-1">Enter your name</label><br />
                             <input type="text" />
                         </li>
                         <li>
-                            <label class="label-2">Upload your video</label><br/>
-                            <input type="file" />
+                            <label class="label-2">Upload your video<br />
+                                <input type="file"></input>
+                                <input type="text" />
+                            </label>
                         </li>
                     </ul>
                 </form>
             </div>
             <div id="bottom-block" class="bottom-block">
                 <a id="bottomside" href="/#">About ⬅</a>
+                <a id="bottomside" class="a-contacts" href="/#">Contacts ⬅</a>
+                <div class="text">
+                    <h3>And here we go again!</h3>
+                    <p>On March 29 and 30, a retrospective of student cinema will be held at
+                        the European Humanitarian Universify for the 9th lime. The theme for this year's
+                        shows is (Re) thinking cinema. You can send video clips made as part of
+                        training courses and your personal work. Do not be afraid to experiment!
+                    </p>
+                    <p>
+                        We will be waiting for work that you would like to share at
+                        cinernaehu@gmail.com. Upload the video fo the file sharing service (dropbox,
+                        we+ransfer, efc.) and copy the link. Do not forget to specify in the letter the
+                        name, duration, genre and authors of the video, as well as a short (or long, if
+                        you are an artist and you see so) a description of the work.
+                    </p>
+                    <p>
+                        We, like all students, do not like the word "deadline", but in order for everything
+                        to happen, we ask you to send your applications by March 251h.
+                    </p>
+                </div>
+                <div class="contacts">
+                    refrospective.untetled@gmail.corn<br/>
+                    facebook.comirefrospective.unfifled<br/>
+                    insfagram.com/unfifled.sfuderif<br/>
+                </div>
             </div>
-
-        </div>
     </header>
 </body>
-<script src="/dist/main.js"></script>
-<script src="src/dropzone.js"></script>
-
+<script src="./dist/main.js"></script>
 </html>

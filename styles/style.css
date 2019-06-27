@@ -90,17 +90,27 @@ body {
 }
 
 .upside-block {
-    white-space: nowrap;
     text-align: left;
+    white-space: nowrap;
     padding-left: 2rem;
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: #00b438;
+    background-color: #98bd09;
     opacity: 1;
     z-index: 5;
     min-height: 0;
     overflow: hidden;
     transition: 0.5s;
+}
+
+.upside-block h2 {
+    text-align: center;
+    margin-top: 150pt;
+    font-size: 40pt;
+}
+.upside-block  .timer {
+    text-align: center;
+    font-size: 75pt;
 }
 
 .upside-block:hover {
@@ -127,7 +137,7 @@ body {
 .left-block a {
     position: absolute;
     left: -55pt;
-    bottom: 100pt;
+    bottom: 65pt;
     transform: rotate(-90deg);
 }
 
@@ -138,7 +148,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 3;
     margin: 0;
-    background-color: #2d298f;
+    background-color: #53b5c6;
     opacity: 1;
     z-index: 6;
     min-width: 0;
@@ -157,6 +167,10 @@ body {
     transform: rotate(90deg);
 }
 
+.right-block input[type="file"] {
+    display: none;
+}
+
 .bottom-block {
     white-space: nowrap;
     text-align: left;
@@ -167,7 +181,7 @@ body {
     grid-column-start: 2;
     grid-column-end: 4;
     margin: 0;
-    background-color: #fc0000;
+    background-color: #de3c55;
     opacity: 1;
     z-index: 7;
     min-height: 0;
@@ -175,9 +189,35 @@ body {
     transition: 0.5s;
 }
 
+.bottom-block .text {
+    text-align: left;
+    font-size: 12pt;
+    max-width: 400pt;
+    word-break: break-all;
+}
+.bottom-block .a-contacts {
+    margin-left: 50%;
+}
+
+.bottom-block .contacts {
+    text-align: left;
+    margin-left: 70%;
+    font-size: 12pt;
+    max-width: 400pt;
+    word-break: break-all;
+}
+
+.bottom-block .text p {
+    text-align: left;
+    font-size: 12pt;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
 .bottom-block:hover {
     min-height: 90vh;
-    margin-top: -87vh;
+    margin-top: -80vh;
 }
 
 .center-block {
@@ -259,4 +299,13 @@ body {
 .video-form label {
     width: 250pt;
     font-size: 35pt;
+}
+
+.map {
+    margin-top: 20pt;
+}
+
+.map-block {
+    margin-top: 50pt;
+    margin-left: 30pt;
 }
